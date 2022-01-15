@@ -52,11 +52,12 @@ var api_key = 'df6d88f2a5bd4280898352a6420dcf56';
   };
 
 
-//form 입력 주소
+//메인
 app.get('/', (req, res) => {
   res.render('index.html');
 })
 
+//api 요청 주소
 app.get('/api/trending', async (req, res) => {
   res.set('Cache-Control', 'no-cache');
   res.json(await apiCall(options));
@@ -66,6 +67,10 @@ app.get('/api/trending', async (req, res) => {
 
 
 
+
+
+
+//서버 열기
  app.listen(3000, function () {
    console.log('http://127.0.0.1:3000/search/local?query=검색어 app listening on port 3000!');
  });

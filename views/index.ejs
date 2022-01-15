@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>연습페이지</title>   
+    </head>
+    <body>
+        <h1>Welcome to My Homepage</h1>
+        <section>
+            <% for(var i = 0; i < list.length; i++) { %>
+                <p><%= list[i].title %></p>
+                <p><%= list[i].link %></p>
+                <p><%= list[i].category %></p>
+                <p><%= list[i].telephone %></p>
+                <p><%= list[i].address %></p>
+                <p><%= list[i].mapx %></p>
+                <p><%= list[i].mapy %></p>
+            <% } %>
+        </section>
+    </body>
+</html>

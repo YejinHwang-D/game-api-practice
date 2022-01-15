@@ -30,7 +30,6 @@ var api_key = 'df6d88f2a5bd4280898352a6420dcf56';
   };
 
   const apiCall = async options => {
-    // (I.) promise to return the parsedResult for processing
     const rawgRequest = () => {
       return new Promise((resolve, reject) => {
         request(options, (error, response, body) => {
